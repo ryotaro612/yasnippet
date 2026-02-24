@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: pow_mod
+# key: pow_mod
+# --
+ll pow_mod(ll x, ll n, ll mod) {
+  ll res = 1ll;
+  while (n) {
+    if (n & 1) {
+      res *= x;
+      res %= mod;
+    }
+
+    n >>= 1;
+    x *= x;
+    x %= mod;
+  }
+  return res;
+}
