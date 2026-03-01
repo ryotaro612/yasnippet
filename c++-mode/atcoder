@@ -2,7 +2,11 @@
 # name: atcoder
 # key: atc
 # --
-#include <bits/stdc++.h>
+#include <iostream>
+#include <map>
+#include <numeric>
+#include <string>
+#include <vector>
 using namespace std;
 using ll = long long;
 using ld = long double;
