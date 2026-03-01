@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: linear_sieve
+# key: linear_sieve
+# --
+vector<long long> linear_sieve(int n) {
+  vector<long long> lpf(n, 0);
+  iota(lpf.begin(), lpf.end(), 0);
+  vector<long long> primes;
+  for (int i = 2; i < n; i++) {
+    if (lpf[i] == i)
+      primes.push_back(i);
+    for (auto &prime : primes) {
+      if (prime * i >= n || lpf[i] < prime)
+        break;
+      lpf[prime * i] = prime;
+    }
+  }
+  return lpf;
+}
