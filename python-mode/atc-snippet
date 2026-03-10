@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: atc-snippet
+# key: atc-snippet
+# --
+import os
+
+def dbg(*args):
+    if os.environ.get("ATCODER") == "1":
+        print(*args)
