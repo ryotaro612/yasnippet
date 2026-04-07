@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: unittest
-# key: unittest
-# --
-class TestCase(unittest.TestCase):
-
-    def test(self):
