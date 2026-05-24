@@ -2,10 +2,14 @@
 # name: atc-snippet
 # key: atc-snippet
 # --
+
 import os
 import sys
+
 sys.setrecursionlimit(10**7)
 
+
 def dbg(*args):
-    if os.environ.get("ATCODER") == "1":
-        print(*args)
+    if not os.environ.get("ATCODER"):
+        print("\033[92m {}\033[00m".format(args))
+
