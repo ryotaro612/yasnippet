@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: atcoder_test
-# key: atcoder_test
-# --
-#include "abc242/e.cc"
-#include "gtest/gtest.h"
-
-TEST(abc242e, 1) {}
