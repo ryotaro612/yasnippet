@@ -6,7 +6,7 @@ class UnionFind:
     def __init__(self, n):
         self.n = n
         self.par = [-1] * n
-
+        
     def find_root(self, a):
         if self.par[a] < 0:
             return a

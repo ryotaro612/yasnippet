@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: remind-claude
+# key: remind-claude
+# --
+Please follow the instructions defined in ~/.claude/CLAUDE.md
