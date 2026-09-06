@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: union-find
-# key: 
+# key: union-find
+# expand-env: ((yas-indent-line 'fixed))
 # --
 class UnionFind:
     def __init__(self, n):
